@@ -1,0 +1,50 @@
+{
+  "name": "öneri-kanalı-kapat",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "BkEAz",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "5",
+      "name": "Check Member Permissions"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "önerikanali",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Server Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Öneri sistemi kapatıldı!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Bu komutu kullanmak için **Yönetici** iznine sahip olmalısın!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0"
+}
